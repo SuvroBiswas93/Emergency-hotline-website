@@ -29,7 +29,7 @@
                     <p class="font-extrabold text-base"><span>0</span></p>
                     <img src="./assets/coin.png" alt="" class="max-w-7 h-7">
                 </div>
-                <button class="bg-[#00A63E] text-white rounded-2xl w-[100px] h-[40px]" id="nav-copy-btn"><span>0</span> copy</button>
+                <button class="bg-[#00A63E] text-white rounded-2xl w-[100px] h-[40px] font-semibold" id="nav-copy-btn"><span id="nav-btn">0</span> Copy</button>
             </div>
         </nav>
     </header>
@@ -261,7 +261,27 @@
             </section>
            
             <aside id="cart-box" class="col-span-3 rounded-lg bg-white shadow-sm">
+                <div class="flex justify-between items-center p-3">
+                    <h1 class="font-bold"><i class="fa-solid fa-clock"></i> Call History</h1>
+                    <button id="clear-btn" class="bg-[#00A63E] text-white font-semibold rounded-3xl w-[80px] h-[40px] cursor-pointer">Clear</button> 
+                </div>
 
+                <div class="space-y-3 bg-gray-200 rounded-lg m-3 " id="cart-container">
+                    <div class="flex justify-between items-center px-3">
+                        <div>
+                            <p class=" font-bold">Cart Title</p>
+                            <p class="">Mobile Number</p>
+                        </div>
+                        <p class="font-bold">11:36:39 AM</p>
+                </div>
+                <!-- <div class="flex justify-between items-center px-3">
+                        <div>
+                            <h1>Cart Title</h1>
+                            <h1>Mobile Number</h1>
+                        </div>
+                        <h1>11:36:39 AM</h1>
+                    </div> -->
+                </div>
             </aside>
         </section>
     </main>
