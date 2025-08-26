@@ -35,7 +35,7 @@
     </header>
     
 
-    <main>
+    <main class="bg-[#F5FFF6]">
         <!-- Banner Section -->
         <section class="banner">
             <div class="bg-[linear-gradient(90deg,#013122,#006747_50%,#013223_100%)] flex flex-col justify-center items-center gap-2 py-3">
@@ -45,8 +45,39 @@
             </div>
         </section>
 
-        <section id="products-container">
+        <section id="products-container" class="w-11/12 mx-auto py-8 grid grid-cols-12 gap-4">
+            <section id="Cards-box" class="col-span-9 ">
+                <!-- product card 1 -->
+                <div class="card-parent">
+                    <div class="card max-w-[400px] h-[350px] rounded-lg bg-[#FFFFFF] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-8">
+                   <div class=" flex justify-between items-center">
+                        <div class="w-15 h-15 bg-[#FFE3E2] rounded-[16px] flex justify-center items-center p-1">
+                            <img src="./assets/emergency.png" alt="" class="w-5 h-5">
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="my-5">
+                        <h1 class="hind-madurai font-extrabold text-[22px]">National Emergency Number</h1>
+                        <p class="hind-madurai text-gray-600 text-lg font-normal">National Emergency</p>
+                    </div>
+                    <div>
+                        <h1 class="text-gray-900 text-4xl font-bold">999</h1>
+                       <div class="bg-gray-100 w-14 h-9 rounded-2xl text-center p-1">
+                         <p>All</p>
+                       </div>
+                    </div>
+                    <div class="flex items-center mt-5 gap-2">
+                        <button id="" class="btn-copy w-44 h-9 box-border border border-gray-300 rounded bg-white text-gray-600"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button id="" class="btn-call w-44 h-9 rounded bg-green-600 text-white"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                    </div>
+                    
+                </div>
+            </section>
+           
+            <aside id="cart-box" class="col-span-3 bg-green-400">
 
+            </aside>
         </section>
     </main>
 
