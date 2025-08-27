@@ -21,7 +21,9 @@ function getElement(id){
 
  /**
   * Implement card copy button feature. when user click copy button inside card 
-  * it will copy and and show the copy count in navbar
+  * it will copy and and show the copy count in navbar 
+  * 
+  * when copy button clicked it will click it will copy card hotline number with an alert massege
   */
 
  const copyBtn = document.getElementsByClassName('btn-copy');
