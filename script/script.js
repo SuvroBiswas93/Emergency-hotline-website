@@ -57,7 +57,32 @@ function getElement(id){
     Show all called services with name & number inside call history section while call button will be clicked
  */ 
 
+const callButton = document.getElementsByClassName('btn-call')
 
+
+for (const btn of callButton) {
+    btn.addEventListener('click',function(){
+        const coinDeduct = Number(getElement("coin-btn").innerText);
+       const remainingCoin = coinDeduct - 20;
+       console.log(remainingCoin)
+        
+     if(coinDeduct <= 0){
+            alert("❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে ২০টি কয়েন প্রয়োজন");
+            return
+       }
+       getElement("coin-btn").innerText = remainingCoin;
+       const cardTitle = btn.parentNode.parentNode.children[1].children[0].innerText
+       const hotlineNumber = btn.parentNode.parentNode.children[2].children[0].innerText
+
+       const TitleandNumber = cardTitle +", "+ hotlineNumber;
+
+
+       alert("📞Calling " + TitleandNumber);
+
+       
+
+    })
+}
 
 
 
