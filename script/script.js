@@ -79,8 +79,23 @@ for (const btn of callButton) {
 
        alert("📞Calling " + TitleandNumber);
 
+       const historyContainer = getElement('history-container');
        
+       const newCart = document.createElement('div');
+       newCart.className = "space-y-3 bg-gray-200 rounded-lg m-3 "
 
+       const currentTime = new Date().toLocaleTimeString();
+
+       newCart.innerHTML =`
+       <div class="flex justify-between items-center gap-3 px-3">
+                        <div>
+                            <p class=" font-bold">${cardTitle}</p>
+                            <p class=" text-[#5C5C5C]">${hotlineNumber}</p>
+                        </div>
+                        <p class="font-bold">${currentTime}</p>
+                </div>
+       `;
+       historyContainer.append(newCart);
     })
 }
 
