@@ -87,18 +87,28 @@ for (const btn of callButton) {
        const currentTime = new Date().toLocaleTimeString();
 
        newCart.innerHTML =`
-       <div class="flex justify-between items-center gap-3 px-3">
+       <div class="flex justify-between items-center gap-3 px-2">
                         <div>
                             <p class=" font-bold">${cardTitle}</p>
                             <p class=" text-[#5C5C5C]">${hotlineNumber}</p>
                         </div>
-                        <p class="font-bold">${currentTime}</p>
+                        <p class="text-sm">${currentTime}</p>
                 </div>
        `;
        historyContainer.append(newCart);
     })
 }
 
+/**
+ * History Box clear button implementation
+ */
+
+const clearAllCart = getElement("clear-btn")
+
+clearAllCart.addEventListener('click',function(){
+    const historyContainer = getElement('history-container');
+    historyContainer.innerHTML = ''
+})
 
 
 
