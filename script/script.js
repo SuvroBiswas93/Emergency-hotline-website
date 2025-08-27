@@ -4,6 +4,10 @@ function getElement(id){
     return element;
 }
 
+/**
+ * implentation of heart counting. when user Will click heart icon
+ *  inside card it will increase count for nav bar heart icon counting 
+ */
  const heartIcons = document.getElementsByClassName('heart-icon');
  let heartCount = Number(getElement('nav-heart-icon').innerText);
 
@@ -12,7 +16,8 @@ function getElement(id){
         heartCount++;
     document.getElementById('nav-heart-icon').innerText = Number(heartCount);
    })
-
  }
+
+
 
  
