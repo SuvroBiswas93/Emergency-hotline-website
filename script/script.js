@@ -48,6 +48,15 @@ function getElement(id){
     })
  }
 
+ /*
+    Implement call button feature indide card. when User will click call button,
+    from navcoin button, 20 coin will be deducted and After clicking on the Call button, 
+    the exact time of the call will be shown in the Call History section and  if coin is less than 20 then 
+    a pop up massege will appear 
+
+    Show all called services with name & number inside call history section while call button will be clicked
+ */ 
+
 
 
 
