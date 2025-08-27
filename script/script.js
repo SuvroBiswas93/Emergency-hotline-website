@@ -4,8 +4,8 @@
 
  for (const heart of heartIcons) {
    heart.addEventListener('click',function(){
-    heartCount++
-    document.getElementById('nav-heart-icon').innerText = heartCount;
+   heartCount++;
+    document.getElementById('nav-heart-icon').innerText = Number(heartCount);
    })
 
  }
