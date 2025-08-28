@@ -1,4 +1,4 @@
- ## 📘 [This is a ReadMe File]
+## 📘 [This is a ReadMe File]
  ---
 
 ## ❓ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
