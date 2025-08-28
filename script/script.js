@@ -16,6 +16,8 @@ function getElement(id){
    heart.addEventListener('click',function(){
         heartCount++;
     getElement('nav-heart-icon').innerText = Number(heartCount);
+       heart.classList.toggle("text-red-500");
+       heart.classList.toggle("text-gray-400");
    })
  }
 
@@ -87,13 +89,17 @@ for (const btn of callButton) {
        const currentTime = new Date().toLocaleTimeString();
 
        newCart.innerHTML =`
-       <div class="flex justify-between items-center gap-3 px-2">
-                        <div>
-                            <p class=" font-bold">${cardTitle}</p>
-                            <p class=" text-[#5C5C5C]">${hotlineNumber}</p>
-                        </div>
-                        <p class="text-sm">${currentTime}</p>
-                </div>
+       <div class="grid grid-cols-2 gap-3 px-2">
+            <div>
+                <p class=" font-bold ">${cardTitle}</p>
+                <p class=" text-[#5C5C5C]">${hotlineNumber}</p>
+            </div>
+
+            <div class="flex items-center justify-end">
+                <p class="">${currentTime}</p>
+            </div>
+        </div>
+
        `;
        historyContainer.append(newCart);
     })
