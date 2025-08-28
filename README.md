@@ -15,17 +15,6 @@ let div = document.createElement("div");
 div.textContent = "Hello This is Text!";
 document.body.appendChild(div);
 ```
----
-## ❓ What is Event Bubbling and how does it work?
-
-- Event goes from the **target element → up to parents → document** (bubbling phase).  
-- Event propagation has **two phases**:  
-  1. **Capturing phase** – Event travels **from the document down to the target element**.  
-  2. **Bubbling phase** – Event travels **from the target element up to the document**.  
-- Most events bubble by default (`click`, `keyup`).  
-- Example: Clicking a button also triggers its parent’s click handler.  
-- Useful for **event delegation**, where a single parent can handle events from multiple child elements.  
-- Bubbling can be stopped using `event.stopPropagation()`.
 
 ---
 
