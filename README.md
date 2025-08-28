@@ -1,28 +1,5 @@
-This is a ReadMe File
-
-What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-
-##  `getElementById `
-
-Select a Single Element By it's id , return sigle DOM element by it's id (return null if not found anything)
-
-**Example:** document.getElementBy(id) (id is unique )
-
-## `getElementsByClassName` 
-
-Select All Elements That have same class name , it returns Html collection which could be manipulated and change DOM properties like (style ,text,src(attribute))
-
-**Example:** document.getElementsByClassName(class)
-
-## `querySelector`
-
-Select the first element that matches a css selector , it returns single element (return null if not found)
-
-**Example:** document.querySelector(.cssselector)
-
-## `getElementById`
-
-
+ ## 📘 [This is a ReadMe File]
+ ---
 
 ## ❓ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
@@ -45,6 +22,19 @@ document.body.appendChild(div);
 
 - Event goes from the **target element → up to parents → document**.  
 - Example: Clicking a button also triggers its parent’s click handler.
+
+---
+
+## ❓ What is Event Bubbling and how does it work?
+
+- Event goes from the **target element → up to parents → document** (bubbling phase).  
+- Event propagation has **two phases**:  
+  1. **Capturing phase** – Event travels **from the document down to the target element**.  
+  2. **Bubbling phase** – Event travels **from the target element up to the document**.  
+- Most events bubble by default (`click`, `keyup`).  
+- Example: Clicking a button also triggers its parent’s click handler.  
+- Useful for **event delegation**, where a single parent can handle events from multiple child elements.  
+- Bubbling can be stopped using `event.stopPropagation()`.
 
 ---
 
