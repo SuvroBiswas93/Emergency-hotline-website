@@ -89,7 +89,7 @@ for (const btn of callButton) {
        const currentTime = new Date().toLocaleTimeString();
 
        newCart.innerHTML =`
-       <div class="grid grid-cols-2 gap-3 px-2">
+       <div class="grid grid-cols-2 gap-3 px-2 py-2">
             <div>
                 <p class=" font-bold ">${cardTitle}</p>
                 <p class=" text-[#5C5C5C]">${hotlineNumber}</p>
